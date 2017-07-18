@@ -28,8 +28,10 @@
                     </button>
 
                     <!-- Branding Image -->
+                    <img style="height: 50px;" src="{{asset('/images/arifu_new.jpg')}}"/>
+
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+<!--                        {{ config('app.name', 'Laravel') }}-->
                     </a>
                 </div>
 
