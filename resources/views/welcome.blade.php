@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Arifu | Online Certificate Issuing System</title>
+        <title>Online Certificate Issuing System</title>
 
 
         <!-- Fonts -->
@@ -80,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{asset('/images/arifu_new.jpg')}}"/> <br>
+<!--                    <img src="{{asset('/images/arifu_new.jpg')}}"/> <br>-->
                     Online Certificate Issuing System
                 </div>
 

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Arifu | Online Certificate Issuing System</title>
+    <title>Online Certificate Issuing System</title>
     {!! Charts::assets() !!}
 
     <!-- Styles -->
@@ -55,7 +55,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <img style="height: 50px;" src="{{asset('/images/arifu_new.jpg')}}"/>
+                    Online Certificate Issuing System
+<!--                    <img style="height: 50px;" src="{{asset('/images/arifu_new.jpg')}}"/>-->
 
                     <a class="navbar-brand" href="{{ url('/') }}">
 <!--                        {{ config('app.name', 'Laravel') }}-->
