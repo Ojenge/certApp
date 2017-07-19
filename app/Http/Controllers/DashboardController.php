@@ -18,6 +18,7 @@ class DashboardController extends Controller
     public function index()
     {
         //
+        return $this->build_dashboard();
     }
 
     /**
@@ -84,5 +85,12 @@ class DashboardController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+
+    public function build_dashboard()
+    {
+
     }
 }
