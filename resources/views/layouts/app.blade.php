@@ -12,6 +12,32 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style type="text/css">
+        .x-navigation li{
+            padding: 20px 20px 10px 10px;
+            line-height: 20px;
+            font-weight: 300;
+            font-size: 13px;
+            color: #2a88bd;
+            border-bottom: 1px solid;
+            float: left;
+            display: block;
+            width: 100%;
+
+            margin: 0px;
+            position: relative;
+        }
+        .x-navigation li.x-title{
+            float: left;
+            display: block;
+            width: 100%;
+            padding: 0px;
+            margin-top: 10px;
+            position: relative;
+
+        }
+
+    </style>
 </head>
 <body>
     <div id="app">

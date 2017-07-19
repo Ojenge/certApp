@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/certificates', 'CertificatesController');
+Route::resource('/dashboard', 'DashboardController');
+
+Route::get('certificates/generate_certificate/{student_id}', 'CertificatesController@generate_certificate')->name('generate');
+//Route::get('user/profile', 'UserController@showProfile')->name('profile');

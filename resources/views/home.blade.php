@@ -3,14 +3,16 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12 col-md-offset-0">
             <div class="panel panel-default">
-                <div class="panel-heading">Student Dashboard</div>
-
-                <div class="panel-body">
-                    Welcome
+                <div class="panel-heading">Dashboard</div>
+                @include('layouts.sidebar')
+                <div class="col-md-10 panel-body">
+                    Main Dashboard
                 </div>
+
             </div>
+
         </div>
     </div>
 </div>
