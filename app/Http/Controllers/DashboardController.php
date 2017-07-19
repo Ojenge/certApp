@@ -105,6 +105,7 @@ class DashboardController extends Controller
                 where cs.course_id = c.id
                 GROUP BY c.description";
 
+
         $data = DB::select($sql);
 
         $labels = array();
