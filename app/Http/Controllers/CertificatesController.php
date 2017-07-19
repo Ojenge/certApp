@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 use App\Student;
 use App\Certificate;
 use niklasravnsborg\LaravelPdf\Facades\Pdf;
+use mPDF;
+use Swift_Attachment;
+use Swift_Message;
+use Swift_Mailer;
+use Swift_MailTransport;
 
 class CertificatesController extends Controller
 {
@@ -131,14 +136,18 @@ class CertificatesController extends Controller
         //Get student details using the student id provided
         $name = Student::where('student_id', $student_id)->first();
         $course = Course::where('id', $name->course_id)->first();
-//        dd($course);
+
         $data = [
             'name' => $name->name,
             'course' => $course->description,
 
         ];
-        $pdf = PDF::loadView('pdf.document', ['data'=>$data]);
-        return $pdf->stream('document.pdf');
+
+        $content = PDF::loadView('pdf.document', ['data'=>$data]);
+        return $content->stream('document.pdf');
+
+
+
 
     }
 }
