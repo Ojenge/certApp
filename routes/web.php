@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'DashboardController@index')->name('home');
 
 Route::resource('/certificates', 'CertificatesController');
 Route::resource('/dashboard', 'DashboardController');
