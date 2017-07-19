@@ -167,6 +167,7 @@ return [
          */
         Collective\Html\HtmlServiceProvider::class,
         niklasravnsborg\LaravelPdf\PdfServiceProvider::class,
+        ConsoleTVs\Charts\ChartsServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -238,6 +239,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'PDF' => niklasravnsborg\LaravelPdf\Facades\Pdf::class,
+        'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
     ],
 
 ];

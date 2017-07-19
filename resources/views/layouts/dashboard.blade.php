@@ -1,6 +1,11 @@
+
+
 @extends('layouts.app')
 
 @section('content')
+<?php
+//dd($data);
+?>
 <div class="container">
     <div class="row">
         <div class="col-md-2 col-md-offset-0">
@@ -11,14 +16,8 @@
             </div>
 
         </div>
-                <div class="col-md-10 panel-body">
-                    Welcome to the Online Certificate Issuing System.
-
-                    Click any of the links to the left to get started
-                </div>
-
-
-
+        <div class="col-md-10 col-md-offset-0">
+            {!! $chart->render() !!}
         </div>
     </div>
 </div>

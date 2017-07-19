@@ -128,8 +128,13 @@ class CertificatesController extends Controller
     public function generate_certificate($student_id)
     {
 
+        //Get student details using the student id provided
+        $name = Student::where('student_id', $student_id)->first();
+        $course = Course::where('id', $name->course_id)->first();
+//        dd($course);
         $data = [
-            'name' => $student_id,
+            'name' => $name->name,
+            'course' => $course->description,
 
         ];
         $pdf = PDF::loadView('pdf.document', ['data'=>$data]);
